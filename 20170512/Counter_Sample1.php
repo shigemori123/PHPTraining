@@ -11,7 +11,7 @@
     $weekday = array( "日", "月", "火", "水", "木", "金", "土" );
 
 
-    printf(date('Y m/d　('.$weekday[date("w")].date(')h:i<br>')));
+    print(date('Y m/d　('.$weekday[date("w")].date(')h:i<br>')));
     echo "<br>";
     echo "{$pieces[1]}　{$pieces[2]}/{$pieces[3]}　(".$weekday[date("w")].")　{$pieces[5]}:{$pieces[6]}";
 
