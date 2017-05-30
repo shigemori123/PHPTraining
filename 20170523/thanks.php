@@ -34,7 +34,7 @@
 <head>
 <meta charset="UTF-8">
 <title>お問い合わせフォーム</title>
-<link rel="stylesheet" href="stylecss.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div>
@@ -42,7 +42,6 @@
 		<h1>お問い合わせ 送信完了</h1>
         <?php
                 $fp = fopen( "count.csv", "r+" );
-                //$str=trim(fgets($fp));
                 $count = 0;
                 while(($tmp=fgets($fp))!=false){
                     $str = $tmp;
@@ -76,7 +75,7 @@
                 fclose( $fp );
             ?>
             お問い合わせ番号：<?= $count?><br>
-		<a href="webkadai.php">
+		    <a href="inquiry.php">
 			<button type="button">お問い合わせに戻る</button>
 		</a>
 	</div>

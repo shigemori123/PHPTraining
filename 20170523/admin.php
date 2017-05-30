@@ -1,11 +1,7 @@
 <html>
     <head>
-        <!--
-            管理画面
-            count.csvの内容をもとに問合せ一覧を表示。
-        -->
         <title>管理</title>
-        <link rel="stylesheet" type="text/css" href="stylecss.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
     <body>
