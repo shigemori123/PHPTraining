@@ -1,15 +1,61 @@
 table{
     margin-left: auto;
     margin-right: auto;
+
+}
+
+
+
+.sample{
+    background-color: silver;
+}
+body{
+    text-align: center;
+
+}
+
+h1{
+    text-align: center;
+    font-family: "ＭＳ ゴシック",sans-serif;
+    border: solid;
+    border-width: 0px 0px 1px 10px;
+    padding: 5px;
+    border-color: #992222;
+    font-size: 120% ;
 }
 
 h5{
     text-align: center;
+    font-family: "ＭＳ ゴシック",sans-serif;
+    border: solid;
+    border-width: 0px 0px 1px 10px;
+    padding: 5px;
+    border-color: #992222;
+    font-size: 120% ;
+}
+td{
+    font-family: "ＭＳ メイリオ",sans-serif;
 }
 
-div{
-    text-align: center;
+
+table.type1{
+  width:100%;
+  border: 10px #000000;
+
 }
-body{
-    text-align: center;
+table.type11 th{
+  border: 1px solid silver;
+  background-color:#CACACA;
+  padding:3px;
+}
+table.type11 td{
+  border: 1px solid silver;
+  text-align:center;
+  padding:3px;
+}
+table.type11 tr:hover {
+  background-color: #FFCC99;    /* マウスオーバー時の行の背景色 */
+}
+table.type11 td:hover {
+  background-color: #FFCC99;    /* マウスオーバー時のセルの背景色 */
 }

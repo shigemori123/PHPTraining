@@ -14,7 +14,7 @@
 
 	<h5>お問い合わせ</h5>
     <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
-        <table>
+        <table class="touroku">
 		<tr><td align="left">姓</td>
 		            <td align="left"><input type="text" name="name_sei"  size="5" required></td></tr>
 
@@ -42,14 +42,14 @@
 			<label for="mail1">メールアドレス
         </td>
                     <td align="left">
-            <input type="email" name="mail1" required pattern="/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/" size="5" required>
+            <input type="text" name="mail1" required pattern="[a-zA-Z0-9_\.\-][A-Za-z0-9_\.\-]+" size="5" required>
 			<label>@</label>
-            <input type="email" name="mail2" required pattern="/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/" size="5" required></td></tr>
+            <input type="text" name="mail2" required pattern="[a-zA-Z0-9_\.\-][A-Za-z0-9_\.\-]+" size="5" required></td></tr>
             <tr><td align="left">
         どこで知ったか</td>
                     <td align="left">
-        <input type="checkbox" name="know[]" value="雑誌"> 雑誌　
-        <input type="checkbox" name="know[]" value="新聞"> 新聞　</td></tr>
+        <input type="checkbox" name="know1" value="雑誌"> 雑誌　
+        <input type="checkbox" name="know2" value="新聞"> 新聞　</td></tr>
         <tr><td align="left">
         質問カテゴリ</td>
                     <td align="left">
@@ -58,7 +58,7 @@
         <tr><td align="left">質問内容</td></tr>
         </table>
         <table>
-        <tr><td align="left"><textarea name="question" cols="50" rows="10"></textarea></td>
+        <tr><td align="left"><nobr><textarea name="question" cols="50" rows="10"></textarea></nobr></td>
 
     </tr>
     <tr><td><input type="submit" value="送信"></td><tr>
